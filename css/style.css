@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Gotu";
+    src: url("../fonts/gotu/gotu.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.text{
+    color: rgb(255,255,255);
+}
+
+body{
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: pink;
+    border-radius: 5px;
+}
+
+.banner{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    height: 960px;
+    width: 190vh;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ban{
+    height: 30%;
+}
+
+
+/*Стили текстов*/
+.text__big{
+    font-family: Gotu;
+    color: #eeeeee;
+    font-size: 200px;
+}
+.text__small{
+    font-family: Gotu;
+    color: #eeeeee;
+    font-size: 50px;
+    position: relative;
+    margin: -88px;
+}
+.text__middle{
+    font-family: Inter;
+    color: #eeeeee;
+    font-size: 40px;
+    align-items: center;
+}
+
+
+/*О нас*/
+
+.line{
+    border-bottom: 5px solid #FF9CB4;
+    width: 1034px;
+    margin: 0 0 0 10%;
+}
