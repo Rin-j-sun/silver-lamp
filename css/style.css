@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*Шрифты*/
 @font-face {
     font-family: "Gotu";
     src: url("../fonts/gotu/gotu.ttf") format("truetype");
@@ -29,6 +30,7 @@ body{
     flex-direction: row;
 }
 
+/*Навигация*/
 #navigation{
     display: flex;
     flex-direction: row;
@@ -43,9 +45,43 @@ a{
     color: white;
 }
 
+.align-items-center{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.foruser{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.register{
+    width: 60px;
+    height: 60px;
+}
+
 button{
     background-color: pink;
     border-radius: 5px;
+    height: 60px;
+    color: #eeeeee;
+    font-size: 40px;
+    font-family: Inter;
+    border-radius: 15%;
+}
+
+button:first-child{
+    width: 140px;
+}
+button:nth-child(2n){
+    width: 323px;
+}
+button:nth-child(odd){
+    width: 201px;
+}
+button:last-child{
+    width: 144px;
 }
 
 .banner{
@@ -83,14 +119,124 @@ button{
     font-family: Inter;
     color: #eeeeee;
     font-size: 40px;
-    align-items: center;
+    text-align:  center;
+    width: 1119px;
+    margin: 0 0 3% 8%;
 }
 
+.text__foryou{
+    font-family: Inter;
+    color: #eeeeee;
+    font-size: 100px;
+    position: relative;
+    margin-left: 25%;
+}
+
+.text__news{
+    font-family: Inter;
+    color: #eeeeee;
+    font-size: 100px;
+    position: relative;
+    margin-left: 35%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/*Рекомендации*/
+.card{
+    height: 400px;
+    width: 300px;
+}
 
 /*О нас*/
 
 .line{
     border-bottom: 5px solid #FF9CB4;
     width: 1034px;
-    margin: 0 0 0 10%;
+    margin: 0 0 3% 12%;
+}
+.text__about{
+     font-family: Inter;
+     color: #eeeeee;
+     font-size: 100px;
+     position: relative;
+     margin-left: 40%;
+ }
+
+/*Интересные факты*/
+.text__facts{
+    font-family: Inter;
+    font-size: 60px;
+    color: #FF9CB4;
+    margin: 0 0 3% 28%;
+}
+.facts__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.facts__card{
+   background-color: #FF9CB4;
+    border-radius: 10%;
+    width: 350px;
+    height: 488px;
+}
+.text__fact{
+    font-family: Inter;
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+
+/*Подвал*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Левая часть*/
+.how__connect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.connect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.left__bigtext{
+    font-family: Inter;
+    font-size: 40px;
+    color: #eeeeee;
+}
+.left__text{
+    font-family: Inter;
+    font-size: 30px;
+    color: #eeeeee;
+}
+
+
+/*Правая часть*/
+.right__content{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 10px;
+}
+.right__title{
+    font-family: Inter;
+    font-size: 40px;
+    color: #eeeeee;
+}
+.right__text{
+    font-family: Inter;
+    font-size: 30px;
+    color: #eeeeee;
 }
